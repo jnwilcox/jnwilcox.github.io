@@ -113,6 +113,29 @@ nav {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+.btn-dark {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #111111;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-dark:hover {
+    background: #222222;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-dark:active {
+    transform: scale(0.96);
+    background: #333333;
+}
+
 /* Hero Section */
 .hero {
     min-height: 80vh;
@@ -358,8 +381,18 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .glass-container { padding: 0 1rem; }
     .title { font-size: 3.5rem; }
     .role { font-size: 1.5rem; }
-    .section-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .section-header { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
     .nav-links { display: none; } /* Add hamburger menu in real build if needed */
+    .filter-buttons { flex-wrap: wrap; justify-content: center; }
+    .projects-grid { 
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .hero { text-align: center; }
+    .profile-img-container { margin: 0 auto 2rem auto; }
+    .hero-cta { justify-content: center; flex-wrap: wrap; }
+    .hero-content { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
 }
