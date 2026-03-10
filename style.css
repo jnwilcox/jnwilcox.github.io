@@ -141,7 +141,7 @@ nav {
     min-height: 80vh;
     display: flex;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .hero-content {
@@ -149,8 +149,8 @@ nav {
 }
 
 .profile-img-container {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 2rem;
