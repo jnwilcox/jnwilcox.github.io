@@ -389,7 +389,7 @@ nav {
 }
 
 .cert-badge {
-    height: 80px;
+    height: 140px;
     width: auto;
     object-fit: contain;
 }
@@ -455,6 +455,6 @@ footer {
     .hero-content { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
     
     /* Shrink the marquee badges on mobile */
-    .cert-badge { height: 60px; }
+    .cert-badge { height: 100px; }
     .marquee-content a { margin: 0 1rem; }
 }
