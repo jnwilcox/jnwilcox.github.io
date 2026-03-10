@@ -19,8 +19,8 @@ class Particle {
         this.y = Math.random() * height;
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
-        this.radius = Math.random() * 2;
-        this.color = `rgba(110, 86, 207, ${Math.random() * 0.3})`;
+        this.radius = Math.random() * 2.5 + 0.5;
+        this.color = `rgba(110, 86, 207, ${Math.random() * 0.5 + 0.1})`;
     }
 
     update() {
@@ -63,7 +63,7 @@ function animate() {
                 ctx.beginPath();
                 ctx.moveTo(particles[i].x, particles[i].y);
                 ctx.lineTo(particles[j].x, particles[j].y);
-                ctx.strokeStyle = `rgba(110, 86, 207, ${0.1 - dist / 1500})`;
+                ctx.strokeStyle = `rgba(110, 86, 207, ${0.25 - dist / 600})`;
                 ctx.stroke();
             }
         }
