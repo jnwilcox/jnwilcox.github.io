@@ -344,6 +344,66 @@ nav {
     color: var(--accent-2);
 }
 
+/* Certifications Marquee Section */
+.certifications {
+    padding: 6rem 0 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 3rem;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    /* Optional sleek fade on edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee-scroll 25s linear infinite;
+}
+
+/* Pause animation on hover for desktop users */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.marquee-content a {
+    display: inline-block;
+    margin: 0 2rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.marquee-content a:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+}
+
+.cert-badge {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Shift by exactly half the container width (which comprises one full set of images) */
+        transform: translateX(-50%);
+    }
+}
+
 /* Contact Section */
 .contact {
     padding: 8rem 0;
@@ -381,6 +441,7 @@ footer {
     .glass-container { padding: 0 1rem; }
     .title { font-size: 3.5rem; }
     .role { font-size: 1.5rem; }
+    .section-header, .section-title { font-size: 2.2rem; margin-bottom: 2rem; }
     .section-header { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
     .nav-links { display: none; } /* Add hamburger menu in real build if needed */
     .filter-buttons { flex-wrap: wrap; justify-content: center; }
@@ -392,4 +453,8 @@ footer {
     .profile-img-container { margin: 0 auto 2rem auto; }
     .hero-cta { justify-content: center; flex-wrap: wrap; }
     .hero-content { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    
+    /* Shrink the marquee badges on mobile */
+    .cert-badge { height: 60px; }
+    .marquee-content a { margin: 0 1rem; }
 }
