@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Wilcox | Data & AI Software Engineer</title>
+    <meta name="description" content="Portfolio of Josh Wilcox, showcasing projects in Data Analytics and AI-Assisted Development ('Vibe Coding').">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Canvas for background animations -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="glass-container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">JW.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/jnwilcox" target="_blank" class="btn-primary">GitHub Profile</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="about" class="hero">
+            <div class="hero-content">
+                <p class="subtitle">Hi, I'm</p>
+                <h1 class="title">Josh Wilcox<span class="dot">.</span></h1>
+                <h2 class="role">Data Analyst <span class="gradient-text">&</span> AI Developer</h2>
+                <p class="description">
+                    Transitioning from Quality Assurance and Customer Support to building deep data insights and modern, highly-interactive web applications through <em>vibe coding</em>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-secondary">View Work</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="vibe">Vibe Coding Apps</button>
+                    <button class="filter-btn" data-filter="data">Data Analytics</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Vibe Coding: SeekerCentral -->
+                <article class="project-card" data-category="vibe">
+                    <div class="card-image-wrapper">
+                        <!-- Placeholder for visual -->
+                        <div class="img-placeholder bg-gradient-1"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">AI Application</span>
+                            <span class="tag">Next.js / Vanilla</span>
+                        </div>
+                        <h3>SeekerCentral</h3>
+                        <p>A modern vibe-coded application for efficient job searching and application tracking, leveraging AI integration.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/jnwilcox/SeekerCentral" target="_blank" class="card-link">Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Vibe Coding: Plexus -->
+                <article class="project-card" data-category="vibe">
+                    <div class="card-image-wrapper">
+                        <!-- Placeholder for visual -->
+                        <div class="img-placeholder bg-gradient-2"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">Full-Stack App</span>
+                            <span class="tag">LLM Integration</span>
+                        </div>
+                        <h3>Plexus</h3>
+                        <p>An AI-assisted full-stack project showcasing dynamic front-end development and sophisticated prompt engineering logic.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/jnwilcox/Plexus" target="_blank" class="card-link">Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Data Analytics: Cyclistic -->
+                <article class="project-card" data-category="data">
+                    <div class="card-image-wrapper">
+                        <!-- Placeholder for visual -->
+                        <div class="img-placeholder bg-gradient-3"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">R / Tableau</span>
+                        </div>
+                        <h3>Cyclistic Bike-Share</h3>
+                        <p>A comprehensive analysis of bike-share usage patterns to inform executive marketing strategies and convert casual riders.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/jnwilcox/Cyclistic" target="_blank" class="card-link">Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Data Analytics: Business Universe -->
+                <article class="project-card" data-category="data">
+                    <div class="card-image-wrapper">
+                        <!-- Placeholder for visual -->
+                        <div class="img-placeholder bg-gradient-4"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">Business Intelligence</span>
+                            <span class="tag">SQL / Python</span>
+                        </div>
+                        <h3>Business Universe Insights</h3>
+                        <p>Deep data analysis providing actionable insights into business operations, highlighting efficiency and growth opportunities.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/jnwilcox/Business-Universe" target="_blank" class="card-link">Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Let's Build Something</h2>
+            <p>I'm currently looking for new opportunities in Data Analysis and AI Software Engineering.</p>
+            <a href="mailto:your.email@example.com" class="btn-primary large">Get In Touch</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Josh Wilcox. Built with raw aesthetics and vibe coding.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
