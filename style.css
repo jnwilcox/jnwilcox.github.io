@@ -192,7 +192,7 @@ nav {
 }
 
 .gradient-text {
-    background: var(--gradient-glow);
+    background: var(--accent-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
